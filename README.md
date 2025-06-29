@@ -51,3 +51,45 @@ Requirement Analysis involves a series of structured activities aimed at underst
 ---
 
 Each of these activities plays a vital role in ensuring the software system meets user expectations and business goals, laying the groundwork for a successful development process.
+
+## 📋 Types of Requirements
+
+Clear categorization of requirements helps guide development and ensures the system meets both user needs and technical expectations for the booking management platform.
+
+---
+
+### 🚧 Functional Requirements
+
+*Functional requirements specify the specific behaviors and features the system must provide.*
+
+- **User Authentication & Profile Management**  
+  — Users must be able to register, log in/log out, and manage their profile information.  
+- **Property Search & Filtering**  
+  — The system should allow searching for properties using criteria like location, availability dates, price range, and ratings.  
+- **Booking & Reservation System**  
+  — Users should be able to select rooms, check date availability, and confirm bookings.  
+- **Payment Processing**  
+  — Integration with payment services to handle payments securely during the booking flow.  
+- **Booking History & View Booking Service**  
+  — Access to past and upcoming bookings, optimized using caching (e.g., Redis) and querying archived data (e.g., Cassandra) :contentReference[oaicite:1]{index=1}.
+
+---
+
+### ⚙️ Non-functional Requirements
+
+*Non-functional requirements define how the system performs and operates under various conditions.*
+
+- **Scalability**  
+  — The architecture must support high user traffic, using components like load balancers, microservices, and caching to handle peak loads :contentReference[oaicite:2]{index=2}.  
+- **Performance & Low Latency**  
+  — Search queries should return results quickly—leveraging ElasticSearch and CDN caching ensures fast responses :contentReference[oaicite:3]{index=3}.  
+- **Reliability & Availability**  
+  — The system must remain operational, using master-slave DB replication and failover strategies to avoid downtime :contentReference[oaicite:4]{index=4}.  
+- **Data Consistency & Integrity**  
+  — Booking operations must maintain consistency, using transactional databases and caching mechanisms (e.g., Redis) :contentReference[oaicite:5]{index=5}.  
+- **Security**  
+  — User data and payments must be protected with secure communication (HTTPS), authentication, and access controls.
+
+---
+
+This structured breakdown ensures the project addresses both **what** the system should do and **how** it should perform—vital for building a robust, user-friendly, and maintainable booking platform.
