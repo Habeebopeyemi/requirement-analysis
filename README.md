@@ -93,3 +93,79 @@ Clear categorization of requirements helps guide development and ensures the sys
 ---
 
 This structured breakdown ensures the project addresses both **what** the system should do and **how** it should perform—vital for building a robust, user-friendly, and maintainable booking platform.
+
+## 📊 Use Case Diagrams
+
+**Use Case Diagrams** are a type of Unified Modeling Language (UML) diagram that visually represent the interactions between users (actors) and the system. They help stakeholders understand the system’s functionality from a user’s perspective.
+
+---
+
+### 🎯 Benefits of Use Case Diagrams
+
+- Clarify system requirements early in the development process
+- Improve communication between technical and non-technical stakeholders
+- Provide a high-level overview of system functionality
+- Assist in identifying and organizing system features
+
+---
+
+### 🧑‍🤝‍🧑 Actors and Use Cases in the Booking System
+
+The booking management system includes the following actors and use cases:
+
+#### **Actors**
+- **Guest** – A registered user who searches for and books properties
+- **Host** – A user who lists properties and manages bookings
+- **Admin** – Manages platform-level controls and user accounts
+- **Payment Gateway** – Third-party system for processing transactions
+
+#### **Key Use Cases**
+- Register/Login
+- Search Properties
+- View Property Details
+- Make a Booking
+- Cancel Booking
+- List a Property
+- Manage Bookings
+- Process Payment
+
+---
+
+### 🖼️ Use Case Diagram
+
+![Use Case Diagram for Booking System](./alx-booking-uc.png)
+
+*Use case diagram created using [Draw.io](https://draw.io) or similar UML tool.*
+
+## ✅ Acceptance Criteria
+
+**Acceptance Criteria** are a set of conditions that a software feature must meet to be accepted by stakeholders, testers, or the product owner. In the context of requirement analysis, acceptance criteria serve as a bridge between business requirements and implementation. They provide clarity, define scope, and establish measurable expectations.
+
+---
+
+### 🧠 Importance of Acceptance Criteria in Requirement Analysis
+
+- 🎯 **Clarity**: Defines what "done" means for a feature, reducing ambiguity for developers and stakeholders.
+- 🧪 **Testability**: Helps QA teams write relevant test cases and ensures the feature works as intended.
+- 🧱 **Scope Control**: Prevents scope creep by setting clear boundaries for each requirement.
+- 🤝 **Alignment**: Ensures all team members (designers, developers, testers, and stakeholders) are aligned on expected behavior.
+
+---
+
+### 🛒 Example: Acceptance Criteria for the **Checkout Feature**
+
+**Feature:** Booking Checkout Process
+
+**Acceptance Criteria:**
+- ✅ User must be logged in to access the checkout page.
+- ✅ The checkout page must display selected property details, booking dates, and pricing summary.
+- ✅ User can enter or select a saved payment method.
+- ✅ System must validate payment information before proceeding.
+- ✅ Upon successful payment, the booking is confirmed and a confirmation email is sent to the user.
+- ✅ Booking details are saved to the database and reflected in the user's booking history.
+- ✅ User is redirected to a booking confirmation screen with a unique booking reference ID.
+
+---
+
+Well-defined acceptance criteria like these help ensure a shared understanding of functionality, leading to higher-quality and more predictable software outcomes.
+
